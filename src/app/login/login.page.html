@@ -1,18 +1,47 @@
-<ion-header>
+<ion-header [translucent]="true" class="ion-no-border">
+
   <ion-toolbar>
-    <ion-title>Logueo</ion-title>
+    <!-- <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button mode="ios" color="white" text="" defaultHref="/login"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons> -->
   </ion-toolbar>
+
+  <div class="circle">
+  </div>
+  <div class="title ion-text-center">
+    <ion-text color="white">
+      <h1>Ingresar</h1>
+    </ion-text>
+  </div>
+
+  <img class="logo" src="/assets/fastgi_secondary_512.svg">
 </ion-header>
 
-<ion-content>
-<ion-item>
-  <ion-label position="floating"> Correo electrónico</ion-label>
-  <ion-input type="text"></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="floating"> Contraseña</ion-label>
-  <ion-input type="text"></ion-input>
-</ion-item>
-<ion-button expand="block">Aceptar</ion-button>
-<ion-item (click)="registro()">Registrate</ion-item>
+<ion-content class="ion-padding">
+  <div class="ion-text-center">
+    <ion-text>
+      <p>Te enviaremos un sms con el código de verificación.</p>
+    </ion-text>
+  </div>
+
+
+  <ion-label>Código país</ion-label>
+  <div class="divider_10"></div>
+  <ion-select color="primary" placeholder="Código de país" interface="popover">
+    <ion-select-option value="+591">🇧🇴 +591</ion-select-option>
+    <ion-select-option value="">🇦🇷 +111</ion-select-option>
+  </ion-select>
+  <div class="divider_20"></div>
+  <ion-label>Número</ion-label>
+  <div class="divider_10"></div>
+  <ion-input type="text" placeholder="Número"></ion-input>
+  <div class="divider_20"></div>
+  <ion-button expand="block" shape="round" size="large">Ingresar</ion-button>
+  <div class="ion-text-right">
+    <ion-text>
+      <p (click)="registro()">Registrarse</p>
+    </ion-text>
+  </div>
 </ion-content>

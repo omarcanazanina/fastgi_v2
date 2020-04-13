@@ -1,0 +1,57 @@
+ion-header {
+    height: 35vh;
+}
+
+.header_login {
+    height: 35vh;
+    width: 100vw;
+}
+
+ion-toolbar {
+    height: 35vh;
+    --opacity: 0;
+}
+
+.title {
+    margin-top: -22vh;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    top: -60vw;
+    left: -5vw;
+    width: 110vw;
+    height: 110vw;
+    background: var(--ion-color-gradient-primary);
+    border-radius: 50%;
+}
+
+.logo {
+    position: absolute;
+    width: 30%;
+    top: 10px;
+    left: 65vw;
+}
+
+ion-select {
+    padding: 15px !important; 
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    color: var(--ion-color-primary);
+}
+
+ion-input {
+    padding: 5px !important;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    color: var(--ion-color-primary);
+}
+
+.divider_20 {
+    margin-top: 20px;
+}
