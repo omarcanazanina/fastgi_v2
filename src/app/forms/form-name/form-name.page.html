@@ -1,0 +1,22 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button mode="ios" text="" defaultHref="/tabs/tab4"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>Nombre</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-label>Nombre</ion-label>
+  <div class="divider_10"></div>
+  <ion-input mode="md" type="text" placeholder="Nombre"></ion-input>
+</ion-content>
+
+<ion-footer mode="md" class="ion-no-border ion-padding">
+  <ion-button shape="round" expand="full" color="primary" (click)="onClick()">
+    Aceptar
+  </ion-button>
+</ion-footer>

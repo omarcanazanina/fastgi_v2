@@ -1,0 +1,55 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button mode="ios" text="" defaultHref="/load-money"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>Código personal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="ion-text-center">
+    <ion-text>
+      <p>Nombre usuario</p>
+    </ion-text>
+    <img width="80%" src="/assets/qr fastgi.png" alt="">
+    <div class="divider_20"></div>
+    <ion-text color="primary">
+      <h3>Monto indeterminado</h3>
+    </ion-text>
+  </div>
+</ion-content>
+
+<ion-footer mode="md" class="ion-no-border">
+  <ion-toolbar class="ion-padding">
+    <ion-button shape="round" expand="full" color="white" routerLink="/amount">
+      <ion-text color="primary">
+        Modificar Monto
+      </ion-text>
+    </ion-button>
+    <div class="divider_20"></div>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="6">
+          <div class="ion-text-center">
+            <ion-icon color="primary" size="large" name="download"></ion-icon>
+            <ion-text>
+              <h6>Descargar QR</h6>
+            </ion-text>
+          </div>
+        </ion-col>
+        <ion-col size="6">
+          <div class="ion-text-center">
+            <ion-icon color="primary" size="large" name="share-social-sharp"></ion-icon>
+            <ion-text>
+              <h6>Compartir QR</h6>
+            </ion-text>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

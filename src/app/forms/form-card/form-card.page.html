@@ -1,0 +1,41 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button mode="ios" text="" defaultHref="/load-money"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>Form Card</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-label>Nombre</ion-label>
+  <div class="divider_10"></div>
+  <ion-input mode="md" type="text" placeholder="Nombre"></ion-input>
+  <div class="divider_20"></div>
+  <ion-label>Número</ion-label>
+  <div class="divider_10"></div>
+  <ion-input mode="md" type="text" placeholder="Número"></ion-input>
+  <div class="divider_20"></div>
+  <ion-label>MM/AA</ion-label>
+  <div class="divider_10"></div>
+  <ion-input mode="md" type="text" placeholder="MM/AA"></ion-input>
+  <div class="divider_20"></div>
+  <ion-label>Código de seguridad</ion-label>
+  <div class="divider_10"></div>
+  <ion-input mode="md" type="text" placeholder="Código de seguridad"></ion-input>
+  <div class="divider_20"></div>
+</ion-content>
+
+<ion-footer mode="md" class="ion-no-border ion-padding">
+  <ion-button shape="round" expand="full" color="white" (click)="onClick()">
+    <ion-text color="primary">
+      Eliminar
+    </ion-text>
+  </ion-button>
+  <div class="divider_20"></div>
+  <ion-button shape="round" expand="full" color="primary" (click)="onClick()">
+    Guardar
+  </ion-button>
+</ion-footer>

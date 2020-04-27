@@ -1,3 +1,11 @@
+.divider_40 {
+    margin-top: 40px;
+}
+
+.divider_30 {
+    margin-top: 30px;
+}
+
 .divider_20 {
     margin-top: 20px;
 }
@@ -8,4 +16,56 @@
 
 .divider_5 {
     margin-top: 5px;
+}
+
+.searchbar_rounded {
+    input {
+        border-radius: 25px !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .searchbar_rounded {
+        --ion-background-color: #1A1B1E;
+    }
+
+    ion-card {
+        --ion-background-color: #1A1B1E;
+    }
+
+    ion-footer {
+        --ion-background-color: #121212;
+    }
+}
+
+ion-content ion-toolbar {
+    --background: translucent;
+}
+
+ion-avatar {
+    border: 1px solid var(--ion-color-primary);
+}
+
+ion-card {
+    border-radius: 15px;
+}
+
+.select_card {
+    border: 2px solid var(--ion-color-primary);
+}
+
+ion-select {
+    padding: 15px !important; 
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+ion-input {
+    padding: 5px !important;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }

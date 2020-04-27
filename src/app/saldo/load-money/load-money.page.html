@@ -1,0 +1,77 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button mode="ios" text="" defaultHref="/tabs"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>Cargar dinero</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+  <ion-card class="select_card">
+    <ion-card-content>
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="11">
+            <p>Tarjeta 1</p>
+            <h3><b>**** **** **** 1234</b></h3>
+            <p>12/25</p>
+          </ion-col>
+          <ion-col size="1" class="ion-align-self-start">
+            <ion-icon name="ellipsis-vertical" routerLink="/form-card"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="11">
+            <p>Tarjeta 2</p>
+            <h3><b>**** **** **** 1234</b></h3>
+            <p>12/25</p>
+          </ion-col>
+          <ion-col size="1" class="ion-align-self-start">
+            <ion-icon name="ellipsis-vertical"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="ion-text-center">
+    <ion-text color="primary">
+      <p>
+        <ion-icon slot="start" name="add"></ion-icon> Agregar tarjeta
+      </p>
+    </ion-text>
+  </div>
+</ion-content>
+
+<ion-footer mode="md" class="ion-no-border">
+  <ion-toolbar class="ion-padding">
+    <label>Monto</label>
+    <div class="ion-text-center">
+      <ion-text color="primary">
+        <h3>1234.56 Bs.</h3>
+      </ion-text>
+    </div>
+    <div class="divider_20"></div>
+    <ion-button shape="round" expand="full" color="white" (click)="onClick()">
+      <ion-text color="primary">
+        Modificar monto
+      </ion-text>
+    </ion-button>
+    <div class="divider_20"></div>
+    <ion-button shape="round" expand="full" color="primary" (click)="onClick()">
+      Cargar
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

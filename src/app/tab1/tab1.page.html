@@ -1,8 +1,13 @@
 <ion-header class="ion-no-border" [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar mode="md">
+    <ion-buttons slot="end">
+      <ion-menu-button color="primary" menu="first_menu"><img src="/assets/menu_icon_512.svg"></ion-menu-button>
+    </ion-buttons>
+
     <ion-item lines="none">
       <ion-avatar slot="start">
-        <img src="https://images.unsplash.com/photo-1569913486515-b74bf7751574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=635&q=80">
+        <img
+          src="/assets/shapes.svg">
       </ion-avatar>
       <ion-label>
         <ion-text color="primary">
@@ -15,5 +20,45 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
+  <ion-grid fixed class="ion-no-padding">
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-content class="ion-no-padding">
+            <ion-grid fixed>
+              <ion-row>
+                <ion-col size="5"> <img width="70px" src="/assets/scan_icon_512.svg"></ion-col>
+                <ion-col offset="1" size="6" class="ion-align-self-center">
+                  <ion-text>
+                    <p><b>Enviar</b></p>
+                    <p>Dinero</p>
+                  </ion-text>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card routerLink="/charge-money">
+          <ion-card-content class="ion-no-padding">
+            <ion-grid fixed>
+              <ion-row>
+                <ion-col size="5"> <img width="70px" src="/assets/qr_icon_512.svg"></ion-col>
+                <ion-col offset="1" size="6" class="ion-align-self-center">
+                  <ion-text>
+                    <p><b>Recibir</b></p>
+                    <p>Dinero</p>
+                  </ion-text>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 
 </ion-content>

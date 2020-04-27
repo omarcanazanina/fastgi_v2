@@ -1,9 +1,60 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>tab4</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <div class="profile">
+    <ion-fab>
+      <ion-fab-button size="small">
+        <ion-icon name="camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <img src='/assets/shapes.svg'>
+  </div>
+  <ion-list class="ion-padding">
+    <ion-item lines="none">
+      <ion-icon slot="start" name="moon"></ion-icon>
+      <ion-label>
+        <p>Tema</p>
+        <h2>Modo oscuro</h2>
+      </ion-label>
+      <ion-toggle slot="end" color="primary"></ion-toggle>
+    </ion-item>
+    <ion-item lines="none" routerLink="/form-name">
+      <ion-icon slot="start" name="person"></ion-icon>
+      <ion-label>
+        <p>Nombre</p>
+        <h2>Nombre usuario</h2>
+      </ion-label>
+      <ion-icon slot="end" name="pencil" color="primary"></ion-icon>
+    </ion-item>
+    <ion-item lines="none" routerLink="/form-phone">
+      <ion-icon slot="start" name="call"></ion-icon>
+      <ion-label>
+        <p>Télefono</p>
+        <h2>+591 76848599</h2>
+      </ion-label>
+      <ion-icon slot="end" name="pencil" color="primary"></ion-icon>
+    </ion-item>
+    <ion-item lines="none" routerLink="/form-mail">
+      <ion-icon slot="start" name="mail"></ion-icon>
+      <ion-label>
+        <p>Correo</p>
+        <h2>test@fastgi.com</h2>
+      </ion-label>
+      <ion-icon slot="end" name="pencil" color="primary"></ion-icon>
+    </ion-item>
+    <ion-item lines="none" routerLink="/form-pin">
+      <ion-icon slot="start" name="key"></ion-icon>
+      <ion-label>
+        <p>PIN</p>
+        <h2>Modificar PIN</h2>
+      </ion-label>
+      <ion-icon slot="end" name="pencil" color="primary"></ion-icon>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon slot="start" name="person-circle"></ion-icon>
+      <ion-label>
+        <p>Sesión</p>
+        <h2>Cerrar cesión</h2>
+      </ion-label>
+      <ion-icon slot="end" name="log-out-sharp" color="primary"></ion-icon>
+    </ion-item>
+  </ion-list>
 </ion-content>

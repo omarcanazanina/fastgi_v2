@@ -1,0 +1,69 @@
+<ion-header mode="md" class="ion-no-border" [translucent]="true">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button mode="ios" text="" defaultHref="/load-money"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <img src="/assets/shapes.svg">
+      </ion-avatar>
+      <ion-label>
+        <ion-text>
+          <p>Amilkar Dominguez</p>
+          <p>
+            <ion-icon color="primary" name="call-sharp"></ion-icon> +59167377467
+          </p>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-searchbar class="searchbar_rounded" shape="round" cancelButtonText="Cancelar" placeholder="Buscar">
+  </ion-searchbar>
+  <ion-list>
+
+    <ion-item lines="none">
+      <ion-label>
+        <h2>Transferencia</h2>
+        <p>22/03/2020 14:25</p>
+      </ion-label>
+      <ion-label slot="end">
+        <ion-text class="ion-text-right">
+          <h1>+512</h1>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer mode="md" class="ion-no-border">
+
+  <ion-grid fixed class="ion-padding">
+    <ion-row>
+      <ion-col size="6">
+        <div class="ion-text-center">
+          <ion-button shape="round" expand="full" color="white" routerLink="/amount">
+            <ion-text color="primary">
+              Transferir
+            </ion-text>
+          </ion-button>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="ion-text-center">
+          <ion-button shape="round" expand="full" color="white" routerLink="/amount">
+            <ion-text color="primary">
+              Cobrar
+            </ion-text>
+          </ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-footer>

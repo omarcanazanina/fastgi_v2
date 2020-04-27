@@ -1,0 +1,29 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button mode="ios" text="" defaultHref="/tabs/tab4"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>Teléfono</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-label>Código país</ion-label>
+  <div class="divider_10"></div>
+  <ion-select color="primary" placeholder="Código de país" interface="popover">
+    <ion-select-option value="+591">🇧🇴 +591</ion-select-option>
+    <ion-select-option value="">🇦🇷 +54</ion-select-option>
+  </ion-select>
+  <div class="divider_20"></div>
+  <ion-label>Número de teléfono</ion-label>
+  <div class="divider_10"></div>
+  <ion-input mode="md" type="text" placeholder="Número de teléfono"></ion-input>
+</ion-content>
+
+<ion-footer mode="md" class="ion-no-border ion-padding">
+  <ion-button shape="round" expand="full" color="primary" (click)="onClick()">
+    Aceptar
+  </ion-button>
+</ion-footer>
